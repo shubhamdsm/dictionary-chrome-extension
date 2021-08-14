@@ -1,0 +1,25 @@
+document.addEventListener('DOMContentLoaded', async () => {
+    document.getElementById('search').addEventListener('click', function(e){
+        e.preventDefault();
+        const word = document.getElementById('word').value;
+        const url = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${word}`;
+        fetch(url)
+        .then(res => res.json())
+        .then(data => renderResults(data))
+        .then(error => console.log(error))
+    })
+})
+
+function renderResults(data){
+        data.forEach(element => {
+        document.getElementById('content').innerText = `Your word : ${element['word']}`
+        const arr = Object.values(element['meanings'])
+        const arrofdefinitons = arr[0]['definitions']
+        const singleDefin = arrofdefinitons[0].definition;
+        const example = arrofdefinitons[0].example;
+        const synonyms = arrofdefinitons[0].synonyms;
+        document.getElementById('definition').innerText = `Definition: ${singleDefin}`;
+        document.getElementById('example').innerText = `Example: ${example}`;
+        document.getElementById('synonyms').innerText = `Synonyms: ${synonyms}`;
+    });
+}

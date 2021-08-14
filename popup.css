@@ -1,0 +1,15 @@
+button {
+    background-color: blue;
+    color: white;
+    border: 2px solid blue;
+    border-radius: 5px;
+}
+
+.heading {
+    padding: 10px;
+}
+
+.input-text {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
