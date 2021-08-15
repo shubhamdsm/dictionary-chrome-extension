@@ -2,12 +2,16 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.getElementById('search').addEventListener('click', function(e){
         e.preventDefault();
         const word = document.getElementById('word').value;
+        if(word === ""){
+            document.getElementById('error').innerText = `Please enter something`;
+        } else{
+          document.getElementById('error').innerText = '';     
         const url = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${word}`;
         fetch(url)
         .then(res => res.json())
         .then(data => renderResults(data))
         .then(error => console.log(error))
-    })
+     } })
 })
 
 function renderResults(data){
@@ -23,3 +27,4 @@ function renderResults(data){
         document.getElementById('synonyms').innerText = `Synonyms: ${synonyms}`;
     });
 }
+
