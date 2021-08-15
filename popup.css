@@ -4,7 +4,10 @@ button {
     border: 2px solid blue;
     border-radius: 5px;
 }
-
+.container{
+    height: 132px;
+    width: 400px;
+}
 .heading {
     padding: 10px;
 }
