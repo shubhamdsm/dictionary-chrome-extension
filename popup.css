@@ -1,8 +1,9 @@
 button {
-    background-color: blue;
+    background-color: #3377DD;
     color: white;
-    border: 2px solid blue;
+    border: 1px solid #3377DD;
     border-radius: 5px;
+    padding: 5px 20px;
 }
 .container{
     height: 132px;
