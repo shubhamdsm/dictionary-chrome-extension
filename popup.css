@@ -4,6 +4,7 @@ button {
     border: 1px solid #3377DD;
     border-radius: 5px;
     padding: 5px 20px;
+    cursor: pointer;
 }
 .container{
     height: 132px;

@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         fetch(url)
         .then(res => res.json())
         .then(data => renderResults(data))
-        .then(error => console.log(error))
+        .catch(error => handleError(error))
      } })
 })
 
@@ -27,4 +27,6 @@ function renderResults(data){
         document.getElementById('synonyms').innerText = `Synonyms: ${synonyms}`;
     });
 }
-
+function handleError(){
+    document.getElementById('error').innerText = `No definition found `
+}
