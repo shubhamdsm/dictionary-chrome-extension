@@ -5,8 +5,7 @@
 * * *
 - Input Box for Search 
 - Get Definition of the word
-- An Example for the word you entered
-- Synonyms for the word you have entered
+
 * * *
 **How to get on your system ?**
 * * *

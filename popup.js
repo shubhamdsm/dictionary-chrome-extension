@@ -20,11 +20,8 @@ function renderResults(data){
         const arr = Object.values(element['meanings'])
         const arrofdefinitons = arr[0]['definitions']
         const singleDefin = arrofdefinitons[0].definition;
-        const example = arrofdefinitons[0].example;
-        const synonyms = arrofdefinitons[0].synonyms;
         document.getElementById('definition').innerText = `Definition: ${singleDefin}`;
-        document.getElementById('example').innerText = `Example: ${example}`;
-        document.getElementById('synonyms').innerText = `Synonyms: ${synonyms}`;
+        
     });
 }
 function handleError(){
