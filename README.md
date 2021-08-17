@@ -15,4 +15,4 @@
 - Go to `chrome://extensions`
 - Select Load unpacked
 - Select the folder that contains the files of the repository 
-- Now enjoy and definition of the words you are looking for ☀️
+- Now enjoy and get the definition of the words you are searching for 🔍🔍🔍
