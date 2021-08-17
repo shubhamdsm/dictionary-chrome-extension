@@ -11,6 +11,13 @@ button {
     padding: 5px 20px;
     cursor: pointer;
 }
+input {
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: 1px solid grey;
+    outline: 0;
+}
+
 .container{
     height: 132px;
     width: 400px;
@@ -22,4 +29,9 @@ button {
 .input-text {
     margin-top: 5px;
     margin-bottom: 5px;
+}
+.form-class{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
