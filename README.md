@@ -6,6 +6,10 @@
 - Input Box for Search 
 - Get Definition of the word
 
+## Demo video
+
+![Demo](demo.gif)
+
 * * *
 **How to get on your system ?**
 * * *
