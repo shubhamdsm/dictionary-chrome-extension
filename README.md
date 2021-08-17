@@ -1,4 +1,4 @@
-## Shabdkosh By - Shubham
+## Shabdkosh(Dictionary) Chrome Extension By - Shubham
 
 * * *
 **Features**
